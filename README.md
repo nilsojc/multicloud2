@@ -20,12 +20,6 @@ In this project we will be setting up our front end and backend for the E-commer
   - Elastic Container Registry
 
   
-  
-<h2>Features</h2>  
-
-
-
-
 
 <h2>Step by Step Instructions</h2>
 
