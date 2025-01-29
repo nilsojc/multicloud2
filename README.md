@@ -6,7 +6,7 @@
 
 This is part of the second project of the challenge/bootcamp! 
 
-In this project we will be 
+In this project we will be setting up our front end and backend for the E-commerce website called Cloudmart, where we will be building a docker image for both ends, which we will be pushing to the container repository in AWS, in order to manage them and deploy them with a Kubernetes Cluster, which will oversee our applications.
 
 
 <h2>Environments and Technologies Used</h2>
@@ -343,4 +343,4 @@ eksctl delete cluster --name cloudmart --region us-east-1
 
 <h2>Conclusion</h2>
 
-In this project, I learned how to 
+In this project, I learned how to effectively set up docker images for the Frontend and Backend for our e-commerce website project, which will be pushed to an AWS repository and managed with Kubernetes to be deployed and executed.
