@@ -177,7 +177,7 @@ Then, we will switch to the backend folder
 
 ```
 cd challenge-day2/backend
-​```
+```
 
 Follow the ECR steps to build your Docker image on the AWS Console.
 
@@ -233,14 +233,13 @@ spec:
     - protocol: TCP
       port: 5000
       targetPort: 5000
-
-​```
+```
 
 Then, we will deploy the backend on Kubernetes
 
 ```
 kubectl apply -f cloudmart-backend.yaml
-​```
+```
 
 
 We can monitor the status of objects being created and obtain the public IP generated for the API
@@ -274,7 +273,8 @@ Then, we will create the yaml deployment file for the frontend
 nano cloudmart-frontend.yaml
 ```
 
-```yaml
+```
+yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
