@@ -322,7 +322,7 @@ kubectl get pods
 kubectl get deployment
 kubectl get service
 ```
-***4. Cleanup***
+***5. Cleanup***
 
 Once we are done with the project we can proceed with cleaning up the resources:
 
