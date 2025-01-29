@@ -172,10 +172,12 @@ In this final step, we will be deploying both the backend and frontend for kuber
 
 First, create an ECR Repository for the Backend and upload the Docker image to it
 
+
 ```
 aws ecr create-repository --repository-name cloudmart-backend --region us-east-1 \
 aws ecr create-repository --repository-name cloudmart-frontend --region us-east-1
 ```
+
 ​
 Then, we will switch to the backend folder
 
@@ -237,6 +239,7 @@ spec:
     - protocol: TCP
       port: 5000
       targetPort: 5000
+
 ​```
 
 Then, we will deploy the backend on Kubernetes
