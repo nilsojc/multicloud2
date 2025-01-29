@@ -1,0 +1,8 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/casl0/devcontainer-features/eksctl:1": {},
+		"ghcr.io/bartventer/arch-devcontainer-features/docker-in-docker:1": {},
+		"ghcr.io/devcontainers-extra/features/kubectl-asdf:2": {}
+	}
+}

@@ -11,9 +11,13 @@ In this project we will be
 
 <h2>Environments and Technologies Used</h2>
 
-  - Terraform
   - Amazon Web Services
   - Github Codespaces
+  - Amazon Bedrock
+  - Docker
+  - Kubernetes
+  - Elastic Kubernetes Services
+  - Elastic Container Registry
 
   
   
@@ -42,12 +46,25 @@ We then do `AWS configure` and enter our access and secret key along with the re
 aws sts get-caller-identity
 ```
 
-We will then install terraform CLI:
+We will then install Kubernetes CLI's which is `eksctl` and `kubectl`:
 
 ```
-sudo wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
-sudo apt update && sudo apt install terraform
+# Download and extract eksctl
+curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+
+# Move eksctl to /usr/local/bin
+sudo mv /tmp/eksctl /usr/local/bin
+
+# Download kubectl
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+
+# Make it executable and move to /usr/local/bin
+chmod +x kubectl
+sudo mv kubectl /usr/local/bin/
+```
+
+```
+
 ```
 
 
