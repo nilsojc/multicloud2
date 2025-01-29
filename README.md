@@ -2,7 +2,7 @@
   <img src="assets/diagram.png" 
 </p>
   
-## ☁️ MultiCloud, DevOps & AI Challenge - Day 2 - Automating AWS provisioning using Terraform  ☁️
+## ☁️ MultiCloud, DevOps & AI Challenge - Day 2 - Deploying Docker Images for an E-commerce Website with Kubernetes  ☁️
 
 This is part of the second project of the challenge/bootcamp! 
 
@@ -13,7 +13,6 @@ In this project we will be setting up our front end and backend for the E-commer
 
   - Amazon Web Services
   - Github Codespaces
-  - Amazon Bedrock
   - Docker
   - Kubernetes
   - Elastic Kubernetes Services
