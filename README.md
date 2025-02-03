@@ -316,11 +316,18 @@ kubectl apply -f cloudmart-frontend.yaml
 
 Again, we can monitor the status of objects being created and obtain the public IP generated for the API
 
-```yaml
+```
 kubectl get pods
 kubectl get deployment
 kubectl get service
 ```
+
+And once done, we can see the results by checking the address on kubectl!
+
+```
+![image](/assets/image1.png)
+```
+
 ***5. Cleanup***
 
 Once we are done with the project we can proceed with cleaning up the resources:
@@ -333,6 +340,8 @@ kubectl delete deployment cloudmart-backend-app
 
 eksctl delete cluster --name cloudmart --region us-east-1
 ```
+
+
 
 <h2>Conclusion</h2>
 
