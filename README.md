@@ -324,9 +324,9 @@ kubectl get service
 
 And once done, we can see the results by checking the address on kubectl!
 
-```
+
 ![image](/assets/image1.png)
-```
+
 
 ***5. Cleanup***
 
